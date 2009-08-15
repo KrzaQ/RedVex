@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{d38744b3-8bf7-4354-9240-7de0118f187a}</ProjectGuid>
+    <MainSource>RedVex.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>G:\Diablo 2\rv25\RedVex.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_AssertionsAtRuntime>False</DCC_AssertionsAtRuntime>
+    <DCC_ExeOutput>G:\Diablo 2\rv25</DCC_ExeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject><Delphi.Personality><Parameters><Parameters Name="UseLauncher">False</Parameters><Parameters Name="LoadAllSymbols">True</Parameters><Parameters Name="LoadUnspecifiedSymbols">False</Parameters><Parameters Name="HostApplication">G:\Diablo 2\rv25\Zoxc.exe</Parameters><Parameters Name="DebugCWD">G:\Diablo 2\rv25\</Parameters></Parameters><VersionInfo><VersionInfo Name="IncludeVerInfo">False</VersionInfo><VersionInfo Name="AutoIncBuild">False</VersionInfo><VersionInfo Name="MajorVer">1</VersionInfo><VersionInfo Name="MinorVer">0</VersionInfo><VersionInfo Name="Release">0</VersionInfo><VersionInfo Name="Build">0</VersionInfo><VersionInfo Name="Debug">False</VersionInfo><VersionInfo Name="PreRelease">False</VersionInfo><VersionInfo Name="Special">False</VersionInfo><VersionInfo Name="Private">False</VersionInfo><VersionInfo Name="DLL">False</VersionInfo><VersionInfo Name="Locale">1044</VersionInfo><VersionInfo Name="CodePage">1252</VersionInfo></VersionInfo><VersionInfoKeys><VersionInfoKeys Name="CompanyName"></VersionInfoKeys><VersionInfoKeys Name="FileDescription"></VersionInfoKeys><VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="InternalName"></VersionInfoKeys><VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys><VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys><VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys><VersionInfoKeys Name="ProductName"></VersionInfoKeys><VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys><VersionInfoKeys Name="Comments"></VersionInfoKeys></VersionInfoKeys><Source><Source Name="MainSource">RedVex.dpr</Source></Source></Delphi.Personality><ModelSupport>False</ModelSupport></BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <DelphiCompile Include="RedVex.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\VCL\TBX\TBXOfficeXPTheme.pas" />
+    <DCCReference Include="RandomHandle.pas" />
+    <DCCReference Include="Shared\RedVexTypes.pas" />
+    <DCCReference Include="Shared\uToolbars.pas" />
+    <DCCReference Include="uAbout.pas">
+      <Form>About</Form>
+    </DCCReference>
+    <DCCReference Include="uHashChecks.pas" />
+    <DCCReference Include="uMain.pas">
+      <Form>MainForm</Form>
+    </DCCReference>
+    <DCCReference Include="uRealms.pas">
+      <Form>Realms</Form>
+    </DCCReference>
+    <DCCReference Include="uRedVexLib.pas" />
+    <DCCReference Include="uSettings.pas">
+      <Form>Options</Form>
+    </DCCReference>
+    <DCCReference Include="uSetup.pas">
+      <Form>SetupHelp</Form>
+    </DCCReference>
+    <DCCReference Include="uToolbarsClasses.pas" />
+    <DCCReference Include="uWindowManager.pas" />
+  </ItemGroup>
+</Project>
